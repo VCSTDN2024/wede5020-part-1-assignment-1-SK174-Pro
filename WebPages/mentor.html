@@ -45,16 +45,38 @@
 <section class="enquiry-section">
   <div class="enquiry-item">
     <img src="../Assests/pexels-kenneth-chiamaka-ejiofor-2149965804-30879378.jpg" alt="Mentor Image">
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeM5EfSahlrdmrqRwZnJO33E1pfdmUsmBCA0s8uzlsVr1FnWQ/viewform?embedded=true" 
-            class="enquiry-iframe"></iframe>
+    <form class="enquiry-form" id="mentor-enquiry-form">
+      <h3>Mentor Enquiry</h3>
+      <label for="mentor-name">Full Name</label>
+      <input type="text" id="mentor-name" name="mentor-name" required>
+      <label for="mentor-email">Email</label>
+      <input type="email" id="mentor-email" name="mentor-email" required>
+      <label for="mentor-phone">Phone Number</label>
+      <input type="tel" id="mentor-phone" name="mentor-phone" required>
+      <label for="mentor-message">Message</label>
+      <textarea id="mentor-message" name="mentor-message" rows="5" required></textarea>
+      <button type="submit">Submit</button>
+      <p class="success-message" id="mentor-success" style="display:none;">Enquiry submitted successfully!</p>
+    </form>
   </div>
 </section>
 
 <section class="enquiry-section">
   <div class="enquiry-item">
     <img src="../Assests/pexels-pavel-danilyuk-8761682.jpg" alt="Sponsor Image">
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc156vBkM6S1UHhCX8OH_P8d_YenrZ6j_X4KQH02RUhNNZ-Lw/viewform?embedded=true" 
-            class="enquiry-iframe"></iframe>
+    <form class="enquiry-form" id="sponsor-enquiry-form">
+      <h3>Sponsor Enquiry</h3>
+      <label for="sponsor-name">Full Name</label>
+      <input type="text" id="sponsor-name" name="sponsor-name" required>
+      <label for="sponsor-email">Email</label>
+      <input type="email" id="sponsor-email" name="sponsor-email" required>
+      <label for="sponsor-phone">Phone Number</label>
+      <input type="tel" id="sponsor-phone" name="sponsor-phone" required>
+      <label for="sponsor-message">Message</label>
+      <textarea id="sponsor-message" name="sponsor-message" rows="5" required></textarea>
+      <button type="submit">Submit</button>
+      <p class="success-message" id="sponsor-success" style="display:none;">Enquiry submitted successfully!</p>
+    </form>
   </div>
 </section>
 
@@ -63,6 +85,5 @@
   <img src="../Assests/facebook.png" alt="Facebook" class="footer-icon">
   <img src="../Assests/instagram.png" alt="Instagram" class="footer-icon">
 </footer>
-
 </body>
 </html>
