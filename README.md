@@ -127,31 +127,31 @@ Total	1,700Absolutely, Samkelo — here’s your **Changelog in raw format**, or
 ## Changelog
 
 - First push of full project structure including all HTML pages, CSS, and assets  
-  *(Commit: e6d702fca6336aa3c5eb61ae6cbbdae8b0d5a759 — [Insert Date])*
+  *(Commit: e6d702fca6336aa3c5eb61ae6cbbdae8b0d5a759 — [27 August ])*
 
 - Updated project files and cleaned layout across all pages  
   - Linked external CSS stylesheet for maintainability  
   - Removed unused media files (GIFs, MP4s)  
   - Renamed image assets for clarity and SEO  
-  *(Commit: 336c0fa7b45e064329c202f860dc5f2b7027b48f — [Insert Date])*
+  *(Commit: 336c0fa7b45e064329c202f860dc5f2b7027b48f — [29 September)*
 
 - Added gallery lightbox functionality and JavaScript validation  
   - Implemented gallery box for program and testimonial images  
   - Added form validation logic for mentor and contact forms  
   - Included success message display and timed reset  
-  *(Commit: 99c3628db7ed3b1bb03cdb505ff7369b5c93bbea — [Insert Date])*
+  *(Commit: 99c3628db7ed3b1bb03cdb505ff7369b5c93bbea — [29 october])*
 
 - Replaced Google Forms with custom HTML forms  
   - Created mentor and sponsor enquiry forms with required fields  
   - Added accessibility support using `aria-live="polite"`  
   - Added SEO meta tags, Open Graph, and Twitter card metadata to all pages  
-  *(Commit: b1582ae3d8b6cf471a0879c9a26f9b0ea00318b4 — [Insert Date])*
+  *(Commit: b1582ae3d8b6cf471a0879c9a26f9b0ea00318b4 — [3 november])*
 
 - Updated About Us page layout and content  
   - Revised mission and vision statements  
   - Refined “Meet the Team” section with roles and photos  
   - Improved cycle diagram layout and visual flow  
-  *(Commit: [Insert Commit Hash] — [Insert Date])*
+  *(Commit: [Insert Commit Hash] — [3 November])*
 
 ---
 
