@@ -66,9 +66,8 @@ document.addEventListener("DOMContentLoaded", () => {
   enquiryForms.forEach(form => {
     const successMessage = form.querySelector(".success-message");
     form.addEventListener("submit", (e) => {
-      e.preventDefault(); // prevent page reload
+      e.preventDefault(); 
 
-      // Simple validation (all required fields)
       const requiredFields = form.querySelectorAll("input[required], textarea[required]");
       let valid = true;
       requiredFields.forEach(f => {
@@ -80,10 +79,9 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      // Show success message
+      
       if (successMessage) successMessage.style.display = "block";
 
-      // Reset form after a short delay
       setTimeout(() => {
         form.reset();
         if (successMessage) successMessage.style.display = "none";
