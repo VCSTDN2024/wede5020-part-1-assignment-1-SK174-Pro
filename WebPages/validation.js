@@ -1,9 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+ 
   const galleryItems = document.querySelectorAll(".gallery-item");
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightbox-img");
   const caption = document.getElementById("caption");
   const closeBtn = document.querySelector(".close");
+
 
   galleryItems.forEach(img => {
     img.addEventListener("click", () => {
@@ -13,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  
   closeBtn.addEventListener("click", () => {
     lightbox.style.display = "none";
   });
@@ -23,7 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  
   const searchInput = document.getElementById("program-search");
   const sortSelect = document.getElementById("program-sort");
   const programContainer = document.querySelector(".program-container");
@@ -31,6 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const noResults = document.getElementById("no-results");
 
   if (searchInput && sortSelect && programContainer) {
+   
     searchInput.addEventListener("input", () => {
       const filter = searchInput.value.toLowerCase();
       let visibleCount = 0;
@@ -48,6 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
       noResults.style.display = visibleCount === 0 ? "block" : "none";
     });
 
+    
     sortSelect.addEventListener("change", () => {
       const sortValue = sortSelect.value;
       const sorted = programCards.sort((a, b) => {
@@ -60,14 +65,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  
   const enquiryForms = document.querySelectorAll(".enquiry-form");
 
   enquiryForms.forEach(form => {
     const successMessage = form.querySelector(".success-message");
-    form.addEventListener("submit", (e) => {
-      e.preventDefault(); 
 
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+   
       const requiredFields = form.querySelectorAll("input[required], textarea[required]");
       let valid = true;
       requiredFields.forEach(f => {
@@ -80,11 +86,17 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       
-      if (successMessage) successMessage.style.display = "block";
+      if (successMessage) {
+        successMessage.textContent = "Thank you for your submission!";
+        successMessage.style.display = "block";
+      }
 
+     
       setTimeout(() => {
         form.reset();
-        if (successMessage) successMessage.style.display = "none";
+        if (successMessage) {
+          successMessage.style.display = "none";
+        }
       }, 2500);
     });
   });
